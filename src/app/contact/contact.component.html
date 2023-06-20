@@ -1,0 +1,35 @@
+<div class="allof">
+    <div class="contus">
+        <h2 style="text-align: center;" class="h2">Contact us</h2>
+    </div>
+
+    <div class="form">
+        <form [formGroup]="info" (ngSubmit)="onSubmit()">
+            <div class="inputs">
+                <label for="firstname">First name: </label>
+                <br>
+                <input id="firstname" type="text" formControlName="fName" placeholder="required">
+            </div>
+            <br>
+            <div class="inputs">
+                <label for="lastname">Last name: </label>
+                <br>
+                <input id="lastname" type="text" formControlName="lName" placeholder="required">
+            </div>
+            <br>
+            <div class="inputs">
+                <label for="email">E-mail: </label>
+                <br>
+                <input id="email" type="email" formControlName="email" placeholder="required">
+            </div>
+            <br>
+            <div>
+                <label for="yourtext">Your questions, praise, suggestions, criticisms:</label>
+                <br>
+                <input id="yourtext" type="text" formControlName="text" placeholder="optional"> 
+            </div>
+            <br>
+            <input type="submit" value="Send" class="btn" >
+        </form>
+    </div>
+</div>

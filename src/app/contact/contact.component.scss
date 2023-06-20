@@ -1,0 +1,37 @@
+.allof {
+    height: 80vh;
+}
+.contus {
+    height: 70px;
+    background-color: rgb(255, 249, 75);
+
+    .h2 {
+        padding-top: 10px;
+        color: rgb(68, 68, 68);
+    }
+}
+
+.form {
+    margin-top: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 18px;
+
+    .inputs {
+        text-align: center;
+
+        input {
+            width: 100%;
+        }
+    }
+    #yourtext {
+        width: 100%;
+        
+    }
+
+    .btn {
+        color: white;
+        margin: auto 42%;
+    }
+}

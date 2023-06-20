@@ -1,0 +1,52 @@
+<div class="cards">
+    <div *ngFor="let x of cars" class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{x.type}}</h5>
+        <p class="card-text">{{x.model}} 
+        <span>{{x.color}}</span></p>
+        <img class="image" src="{{x.img}}" alt="">
+        <br><br>
+        <p class="card-text">{{x.price}} €</p>
+        <a href="#" class="btn btn-primary">Rent</a>
+      </div>
+    </div>
+</div>
+<br><br>
+<div class="form">
+  <div>
+    <h3 class="h3">New car informations:</h3>
+    <form [formGroup]="another" (ngSubmit)="onSubmit()">
+      <div class="inputs">
+        <label for="brand">Brand: </label>
+        <br>
+        <input type="text" name="brand" id="brand" formControlName="type">
+      </div>
+      <br>
+      <div class="inputs">
+        <label for="model">Model: </label>
+        <br>
+        <input type="text" name="model" id="model" formControlName="model">
+      </div>
+      <br>
+      <div class="inputs">
+        <label for="color">Color: </label>
+        <br>
+        <input type="text" name="color" id="color" formControlName="color">
+      </div>
+      <br>
+      <div class="inputs">
+        <label for="image">Image: </label>
+        <br>
+        <input type="text" name="image" id="image" formControlName="img">
+      </div>
+      <br>
+      <div class="inputs">
+        <label for="price">Price: </label>
+        <br>
+        <input type="text" name="price" id="price" formControlName="price">
+      </div>
+      <br>
+      <input type="submit" value="Submit" class="btn">
+    </form>
+  </div>
+</div>
